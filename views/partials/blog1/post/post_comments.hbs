@@ -1,0 +1,23 @@
+<div>
+	<div>
+		{{> post_comment name="same" return=blog.return_path text="This is a very interesting article, it made me think about many things" src="post_comment.png"}}
+
+		<div id="hidden_comments" style="display: none">
+			{{> post_comment name="same" return=blog.return_path text="This is a very interesting article, it made me think about many things" src="post_comment.png"}}
+			{{> post_comment name="same" return=blog.return_path text="This is a very interesting article, it made me think about many things" src="post_comment.png"}}
+			{{> post_comment name="same" return=blog.return_path text="This is a very interesting article, it made me think about many things" src="post_comment.png"}}
+		</div>
+	</div>
+
+	<div>
+		<p><a class="cursor-pointer" style="font-family: Inter;font-size: 12px;font-weight: 400;line-height: 16.8px;color: #54893D;">To answer...</a></p>
+		<a class="cursor-pointer" style="font-family: Inter;font-size: 16px;font-weight: 500;line-height: 22.4px;color: #333;" 
+		onclick="document.getElementById('hidden_comments').style.display='block'; this.style.display='none' ">3 more comments</a>
+	</div>
+</div>
+
+<style>
+.cursor-pointer:hover{
+	cursor: pointer;
+}
+</style>

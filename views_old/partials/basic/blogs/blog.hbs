@@ -1,0 +1,48 @@
+
+        <!-- start blog section -->
+        <section class="pt-0 ps-7 pe-7 xl-ps-2 xl-pe-2 top-space-margin">
+            <div class="container-fluid">                
+                <div class="row">
+                    <div class="col-12">
+
+
+                        <ul data-anime='{ "el": "childs", "scale": [0,1], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }' class="blog-only-text blog-wrapper grid-loading grid grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
+                            <li class="grid-sizer"></li>
+
+							{{#each blog.elems}}
+							<li class="grid-item" style="position: absolute; left: 0%; top: 0px; height: 400px;">
+								<a href="single-post?post_id={{this.id}}">
+									<div class="card border-radius-4px box-shadow-extra-large border-0 h-100 overflow-hidden">
+										<div class="card-body hover-box dark-hover p-15 md-p-12">
+											<img src="../{{this.preview}}" class="hover-img" alt="" data-no-retina="" />
+
+											<div class="col fancy-text-box-style-01 border-color-light-medium-gray p-0" style="">
+												<div class="text-box-wrapper align-items-center d-flex">
+													<div class="position-relative text-center w-100">
+														<div class="text-box last-paragraph-no-margin p-14">
+																<a class="categories-btn ms-0 bg-dark-gray text-white text-dark-gray-hover text-uppercase alt-font fw-500 mb-70px">{{this.theme}}</a>
+																<a class="card-title d-block fs-20 ls-minus-05px fw-500 text-dark-gray mb-0 w-90">{{this.title}}</a> 
+														</div>
+														<a href="single-post?post_id={{this.id}}">
+															<div class="text-box-hover p-2 lg-p-12 md-p-17 sm-p-12 xs-p-17 bg-gradient-black-bottom-transparent">
+																<p class="mb-15px">{{this.desc}}</p>
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							{{/each}}
+
+						</ul>
+						{{> pagination}}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end blog section -->
+
+

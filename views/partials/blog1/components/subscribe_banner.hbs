@@ -1,0 +1,129 @@
+<section id="subscribe-banner" class="subscribe-banner">
+	<div style="background: #B9E6A6; border: 1px solid #54893D; border-radius: 10px; padding: 10px; padding-top: 100px; padding-bottom: 100px; display: flex; justify-content: center">
+		<div style="text-align: center;">
+			<div style="text-align: center;">
+				<p class="fs-50 fw-500 lh-50 text-align-center mb-0 ">We talk about science </p>
+				<p class="fs-50 fw-500 lh-50">in the most interesting way</p>
+			</div>
+			<div style="text-align: center;">
+				<p class="fs-16 fw-400 lh-20 mb-0 ">You can subscribe to us to be the first to know news</p>
+				<p class="fs-16 fw-400 lh-20">from the world of science</p>
+			</div>
+
+			<div class="mt-10px" style="text-align: center; display: flex; justify-content: center">
+
+                            <form action="" method="post" class="position-relative w-100">
+                                <div class="position-relative form-group border-radius-10px" style="background: white; display: flex; height: 45px; background: #0D2901;">
+                                    <input class="fs-15 pl-5px border-radius-10px border-color-charcoal-grey bg-white form-control required" type="email" name="email" placeholder="Your e-mail" style="border-color: #0D2901;"/>
+                                    <span class="p-10px  border-radius-10px" style="background: #0D2901;">
+										<img width="25px" src="{{blog.return_path}}images/to_send_white.svg"/>
+									</span>
+                                </div>
+
+								<div class="mt-5px" style="font-family: Inter; font-size: 12px; display: flex; height: 14px;">
+									<label class="w-20px checkbox-container">
+										<input type="checkbox" checked="checked">
+										<span class="checkmark"></span>
+									</label>
+									<label for="html">I confirm my consent to receive the newsletter</label>
+								</div>
+                                <input type="hidden" name="redirect" value="">
+                                <button type="submit" aria-label="submit" class="btn pe-20px text-white fs-13 fw-500 lg-ps-15px lg-pe-15px submit"></button>
+                                <div class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none"></div>
+                            </form>
+
+
+
+
+
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<style>
+.subscribe-banner{
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #002B4E;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+}
+</style>
+
+
+<style>
+
+#subscribe-banner{
+	margin-left: 100px; margin-right: 100px;
+
+	@media(max-width: 800px){
+		margin-left: 0px; 
+		margin-right: 0px;
+	}
+}
+</style>

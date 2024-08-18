@@ -1,0 +1,46 @@
+                <div class="row align-items-center">
+                    <div class="col-12 position-relative swiper-light-pagination">
+                        <div class="swiper" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "autoplay": { "delay": 1600, "disableOnInteraction": false }, "pagination": { "el": ".swiper-pagination-bullets-03", "clickable": true, "dynamicBullets": false }, "navigation": { "nextEl": ".slider-one-slide-next-02", "prevEl": ".slider-one-slide-prev-02" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 3 }, "480": { "slidesPerView": 2 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
+
+                            <div class="swiper-wrapper align-items-center">	
+								{{#each blog.elems}}
+									{{#if (isEqual this.id ../request.query.post_id)}}
+										{{#with this.author_id}}
+											{{#each ../../this.blog.elems}}
+												{{#if (isEqual this.author_id ../this)}}
+													<div class="swiper-slide">
+														<a href="single-post?post_id={{this.id}}">
+															<div class="atropos" data-atropos data-atropos-perspective="1450">
+																<div class="atropos-scale">
+																	<div class="atropos-rotate">
+																		<div class="atropos-inner">
+																			<figure class="m-0 hover-box overflow-hidden position-relative" data-atropos-offset="3">
+																				<img class="w-100 h-100" src="https://via.placeholder.com/600x815" alt="" />
+																				<figcaption class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-15 xl-p-12 last-paragraph-no-margin">
+																					<p class="text-white opacity-6 fs-18">{{this.title}}</p>
+																					<div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9"></div>
+																					<div class="box-overlay bg-gradient-gray-light-dark-transparent z-index-minus-1"></div>
+																				</figcaption>
+																			</figure>
+																		</div>
+																	</div> 
+																</div>
+															</div>
+														</a>
+													</div>
+												{{/if}}
+											{{/each}}
+										{{/with}}
+									{{/if}}
+								{{/each}}	
+                            </div>
+                        </div>
+                        <!-- start slider navigation -->
+                        <div class="slider-one-slide-prev-02 bg-transparent border border-2 border-color-transparent-white-very-light h-50px w-50px swiper-button-prev slider-navigation-style-03"><i class="fa-solid fa-arrow-left text-white"></i></div>
+                        <div class="slider-one-slide-next-02 bg-transparent border border-2 border-color-transparent-white-very-light h-50px w-50px swiper-button-next slider-navigation-style-03"><i class="fa-solid fa-arrow-right text-white"></i></div>
+                        <!-- end slider navigation -->
+                        <!-- start slider pagination -->
+                        <div class="swiper-pagination swiper-pagination-bullets-03 swiper-pagination-style-01 swiper-pagination-clickable swiper-pagination-bullets position-static mt-40px sm-mt-25px"></div>
+                        <!-- end slider pagination -->
+                    </div>
+                </div>

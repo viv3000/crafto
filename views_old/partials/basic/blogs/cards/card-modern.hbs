@@ -1,0 +1,27 @@
+<li class="grid-item {{classes}}">
+	<div class="box-hover text-center">
+		<figure class="mb-0 position-relative">
+			<div class="position-relative overflow-hidden">
+				<a href="single-post?post_id={{data.id}}" class="w-100 h-100"><img src="../{{data.preview}}" alt="" /></a>
+				
+			</div>
+			<figcaption class="card-body">
+				<div class="position-relative bg-dark-gray post-content p-30px z-index-2">
+					<div class="hover-text">
+						<a href="blog?theme='{{data.theme}}'" class="text-gradient-light-purple-light-orange fs-15 text-uppercase fw-600 mb-5px d-inline-block">{{data.theme}}</a>
+					</div>
+					<a href="demo-blogger-blog-single-classic.html" class="card-title mb-0 fs-19 lh-26 text-white d-inline-block">
+						{{data.title}}
+					</a>
+					<br/>
+					<span class="d-inline-block">By <a href="blog-simple.html" class="text-dark-gray-hover">Jonse robbert</a></span>
+					<span class="separator d-inline-block">|</span>
+					<a href="blog-simple.html" class="text-dark-gray-hover">{{data.date}}</a>
+					<div class="box-overlay bg-dark-gray z-index-minus-1"></div>
+				</div>
+				<div class="fs-14 bg-white p-15px lh-initial">
+					</div>
+			</figcaption>
+		</figure>
+	</div>
+</li>

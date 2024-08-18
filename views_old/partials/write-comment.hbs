@@ -1,0 +1,32 @@
+
+        <section id="comments" class="p-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 mb-3 sm-mb-6">
+                        <h6 class="alt-font text-dark-gray fw-500 mb-5px">Write a comment</h6>
+                        <div class="mb-5px">Your email address will not be published. Required fields are marked *</div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <form action="email-templates/contact-form.php" method="post" class="row contact-form-style-02">
+                            <div class="col-md-6 mb-30px">
+                                <input class="input-name border-radius-4px form-control required" type="text" name="name" placeholder="Enter your name*">
+                            </div> 
+                            <div class="col-md-6 mb-30px">
+                                <input class="border-radius-4px form-control required" type="email" name="email" placeholder="Enter your email address*">
+                            </div> 
+                            <div class="col-md-12 mb-30px">
+                                <textarea class="border-radius-4px form-control" cols="40" rows="4" name="comment" placeholder="Your message"></textarea>
+                            </div> 
+                            <div class="col-12">
+                                <input type="hidden" name="redirect" value="">
+                                <button class="btn btn-dark-gray btn-small btn-round-edge submit" type="submit">Post Comment</button>
+                                <div class="form-results mt-20px d-none"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+			<br/>
+        </section>

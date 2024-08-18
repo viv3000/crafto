@@ -1,0 +1,43 @@
+<div>
+				<div class="col-12 mt-4 d-flex justify-content-center">
+					<ul class="pagination pagination-style-01 fs-13 fw-500 mb-0" id="pagination">
+						<li class="page-item"><a class="page-link feather" href="#"> < </a></li>
+
+						<li class="page-item active"><a class="page-link border-radius-10px" href="{{path}}?page=1">1</a></li>
+						<li class="page-item"><a class="page-link border-radius-10px" href="{{path}}?page=2">2</a></li>
+						<li class="page-item"><a class="page-link border-radius-10px" href="{{path}}?page=3">3</a></li>
+						<li class="page-item"><a class="page-link border-radius-10px" href="#">...</a></li>
+						<li class="page-item"><a class="page-link border-radius-10px" href="{{path}}?page=4">100</a></li>
+
+						<li class="page-item"><a class="page-link feather" href="#"> > </a></li>
+					</ul>
+				</div> 
+
+				<div class="row justify-content-center mb-1 mt-50px">
+                    <div class="col-lg-7 text-center">
+
+                            <div class="nav-item">
+								<a href="login" class=" fs-16 p-20px" style="background:#CFD201; color: #000; border-radius: 10px; font-family: Inter;" >Load more</a>
+							</div>
+
+					</div>
+				</div>
+</div>
+
+<style>
+#pagination {
+	color: black;
+}
+#pagination .active .page-link{
+	color: black;
+	background: #CCDCC5;
+	font-size: 16px;
+}
+
+#pagination .feather{
+	color: #54893D;
+	font-size: 30px;
+}
+
+</style>
+

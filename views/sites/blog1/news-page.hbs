@@ -1,0 +1,94 @@
+<script type="text/javascript">
+let showScroll = () => {
+		let rb = document.getElementById("right-button")
+		let lb = document.getElementById("left-button")
+		let tags = document.getElementById("tags")
+		if (tags.scrollLeft == 0) {
+			rb.style.display = "none"
+		}else {
+			rb.style.display = "block"
+		}
+		if (tags.scrollLeft == tags.scrollLeftMax) {
+			lb.style.display = "none"
+		}
+		else {
+			lb.style.display = "block"
+		}
+		
+
+	}
+
+let scrollTags = async (elementId, scroll) => {
+	for (let i=0; i!=10; i++){
+		document.getElementById(elementId).scrollLeft+=scroll/10
+		await new Promise(resolve => setTimeout(resolve, 10));
+		showScroll()
+	}
+}
+</script>
+
+{{#>layout}}
+	<section class="text-center text-black">
+		<h1>NEWS</h1>
+	</section>
+	<section id="tags-section" class="mt-0 pt-0 " style="display: flex;">
+				<a id="right-button" class="fs-50 pb-5px pe-40px" style="cursor: pointer; color: #54893D;; position: absolute;
+				background: linear-gradient(-90deg, rgba(255,255,255, 0.1) 0%, rgba(255,255,255, 0.9) 50%,  #fff 100%);" onclick="scrollTags('tags', -150)"><</a>
+				<div id="tags" style=" overflow: hidden; white-space: nowrap; display: flex;">
+					{{> tag2 text="Biology"}}
+					{{> tag2 text="AI" }}
+					{{> tag2 text="Nanotechnology" }}
+					{{> tag2 text="Physics" }}
+					{{> tag2 text="Medicine" }}
+					{{> tag2 text="Ecology" }}
+					{{> tag2 text="Chemistry" }}
+					{{> tag2 text="Genetics and Biotechnology" }}
+					{{> tag2 text="Astronomy" }}
+					{{> tag2 text="Anthropology" }}
+					{{> tag2 text="Economy" }}
+				</div>
+				<a id="left-button" class="fs-50 ps-40px pe-10px" style="cursor: pointer; color: #54893D; position: absolute;
+				background: linear-gradient(90deg, rgba(255,255,255, 0.1) 0%, rgba(255,255,255, 0.9) 50%,  #fff 100%);
+				"
+
+				onclick="scrollTags('tags', 150)">></a>
+
+	</section>
+
+	{{> news }}
+{{/layout}}
+
+<script type="text/javascript">
+
+		showScroll()
+
+</script>
+
+<style>
+#tags-section {
+	#tags{
+		margin-top: 5px;
+	}
+	margin-left: 100px; margin-right: 100px;
+	#right-button {
+			left: 100px
+	}
+	#left-button {
+			right: 100px
+	}
+	@media (max-width: 950px) {
+		margin-left: 0px; margin-right: 0px;
+		#right-button {
+				left: 0px
+		}
+		#left-button {
+				right: 0px
+		}
+	}
+	@media (max-width: 765px) {
+		#tags{
+			margin-top: 0px;
+		}
+	}
+}
+</style>

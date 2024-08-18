@@ -1,0 +1,26 @@
+
+        <div id="subscribe-popup" class="mfp-hide subscribe-popup">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-6 col-md-7 bg-white">
+                        <div class="row position-relative box-shadow-quadruple-large">
+                            <div class="col-lg-12 cover-background h-280px" style="background-image:url('https://via.placeholder.com/600x406');"></div>
+                            <div class="col-lg-12 newsletter-popup text-center p-40px pt-20px position-relative">
+                                <span class="text-base-color alt-font fw-600 fs-18 text-uppercase mb-10px d-block" style="">Best world-wide news!</span>
+                                <h4 class="d-inline-block alt-font fw-700 text-uppercase ls-minus-1px text-dark-gray mb-30px">Subscribe on daily news!</h4>
+                                <div class="d-inline-block w-100 newsletter-style-01 position-relative mb-20px">
+                                    <form action="email-templates/subscribe-newsletter.php" method="post">
+                                        <input class="input-medium w-100 border-radius-4px form-control required" type="email" name="email" placeholder="Enter your email address" />
+                                        <input type="hidden" name="redirect" value="">
+                                        <button type="submit" aria-label="submit" class="btn btn-medium btn-round-edge btn-dark-gray btn-box-shadow submit">Submit</button>
+                                        <div class="form-results border-radius-4px mt-10px lh-normal pt-10px pb-10px ps-15px pe-15px fs-14 w-100 text-center position-absolute z-index-1 d-none"></div>
+                                    </form>
+                                </div>
+                                <label for="newsletter-off" class="fs-15"><input class="w-auto me-10px position-relative top-1px p-0" type="checkbox" id="newsletter-off" name="newsletter-off">Don't show this popup again</label>
+                            </div>
+                            <button title="Close (Esc)" type="button" class="mfp-close text-dark-gray"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

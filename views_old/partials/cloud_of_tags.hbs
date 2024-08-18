@@ -1,0 +1,24 @@
+<section class="accordion-item pt-0 ps-7 pe-7 xl-ps-2 xl-pe-2" style="max-width: min-content;">
+    <div class="accordion-header">
+        <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-07-{{title}}" aria-expanded="true" data-bs-parent="#accordion-style-07">
+        <div class="accordion-title fs-18 position-relative pe-0 alt-font text-dark-gray fw-600 mb-0">{{title}}</div>
+        </a>
+    </div>
+    <div id="accordion-style-07-{{title}}" class="accordion-collapse collapse" data-bs-parent="#accordion-style-07">
+		<div class="accordion-body last-paragraph-no-margin">
+			{{# threeEach tags}}
+				<div style="display: flex;">
+					{{# if this.0.name}}
+						<p class="tag-cloud pt-5 pm-0 mb-0" style="min-width: max-content;"><a href="/blog?{{../title}}='{{this.0.name}}'">{{this.0.name}}</a></p>
+					{{/ if}}
+					{{# if this.1.name}}
+						<p class="tag-cloud pt-5 pm-0 mb-0" style="min-width: max-content;"><a href="/blog?{{../title}}='{{this.1.name}}'">{{this.1.name}}</a></p>
+					{{/ if}}
+					{{# if this.2.name}}
+						<p class="tag-cloud pt-5 pm-0 mb-0" style="min-width: max-content;"><a href="/blog?{{../title}}='{{this.2.name}}'">{{this.2.name}}</a></p>
+					{{/ if}}
+				</div>
+			{{/ threeEach}}
+		</div>
+    </div>
+</section>

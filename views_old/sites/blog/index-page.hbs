@@ -1,0 +1,8 @@
+{{#>layout header="Home"}}
+	<div class="row top-space-margin fw-600 fs-19 lh-22 ls-minus-05px text-dark-gray border-bottom border-color-dark-gray border-2"
+	style="display: flex;justify-content: space-around; height: 200px;">
+		{{> cloud_of_tags tags=this.blog.tags title="Tags"}}
+		{{> cloud_of_tags tags=this.blog.authors title="Authors"}}
+	</div>
+	{{> blog}}
+{{/layout}}

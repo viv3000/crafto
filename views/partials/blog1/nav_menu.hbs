@@ -1,0 +1,37 @@
+		 <nav class="mb-10px navbar navbar-expand-lg header-transparent bg-transparent header-reverse position-initial" data-header-hover="light" style="border: 1px solid #CCDCC5; border-radius: 10px; height: 64px;">
+                <div class="container-fluid p-0">
+
+                    <div class="col-auto menu-order position-static p-0">
+                        <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                        </button>
+                        <div class="collapse navbar-collapse fs-16" id="navbarNav"
+							style="font-family: Inter;line-height: 19.36px;"> 
+                            <ul class="navbar-nav alt-font"> 
+                                <li class="nav-item"><a href="{{blog.path}}about"    class="nav-link" style="color: #222">About</a></li>
+                                <li class="nav-item"><a href="{{blog.path}}blog"     class="nav-link" style="color: #222">Blog</a></li>
+                                <li class="nav-item"><a href="{{blog.path}}news"     class="nav-link" style="color: #222">News</a></li>
+                                <li class="nav-item"><a href="{{blog.path}}contacts" class="nav-link" style="color: #222">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="">
+                        <a class="navbar-brand p-0" href="{{blog.return_path}}{{blog.path}}" style="display: flex;
+  flex-direction: column;
+  justify-content: center;">
+                            <img src="{{blog.return_path}}images/logo_with_text.png" alt="" style="height: 80%; width: 80%;">
+                        </a>
+                    </div>
+                    <div class="col-auto col-xxl-3 col-lg-2 text-end d-none d-sm-flex">
+                        <div class="header-icon" style="background: transparent;">
+                            <div class="nav-item">
+								<a href="login" class="p-10px" style="background:#CFD201; color: #000; border-radius: 10px; font-family: Inter;" >Log in</a>
+							</div>
+                        </div>  
+                    </div>
+                </div>
+            </nav>
+

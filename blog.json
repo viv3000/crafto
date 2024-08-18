@@ -1,0 +1,200 @@
+{
+  "path": "../blog1/",
+  "return_path": "../../",
+  "elems": [
+    {
+      "id": 346,
+      "title": "US Announces Major Infrastructure Plan",
+      "preview": "cb397678fa751e40.jpg",
+      "theme": "america",
+      "desc": "The US government has unveiled a historic multi-trillion-dollar infrastructure plan aiming to revitalize the nation's roads, bridges, and public services.",
+      "date": "7 July 2024",
+      "author_id": 23,
+	  "likes": 15,
+	  "tag_ids": [1,2,3,4,5,6]
+    },
+    {
+      "id": 347,
+      "title": "Martian Microbes Discovered by New Rover",
+      "preview": "5e70b0f7d804873c.jpg",
+      "theme": "sensation",
+      "desc": "NASA's latest Mars rover has discovered evidence of microbial life, opening up new possibilities for extraterrestrial life.",
+      "date": "7 July 2024",
+      "author_id": 28,
+	  "likes": 5,
+	  "tag_ids": [1]
+
+
+    },
+    {
+      "id": 345,
+      "title": "Election Upset in Canada",
+      "preview": "8654b5014fb7d260.jpg",
+      "theme": "politics",
+      "desc": "In a surprising upset, the Green Party of Canada has become the country's leading political party after yesterday's general election.",
+      "date": "7 July 2024",
+      "author_id": 12,
+      "big": 1,
+	  "likes": 50,
+	  "tag_ids": [1,2,3,5]
+
+
+    },
+    {
+      "id": 343,
+      "title": "Unprecedented Heat Wave Cripples Europe",
+      "preview": "f12a1eeca12782f3.jpg",
+      "theme": "hot news",
+      "desc": "An unexpected and record-breaking heat wave has swept across Europe, causing widespread disruptions in multiple countries.",
+      "date": "7 July 2024",
+      "author_id": 33,
+      "big": 1,
+	  "likes": 25,
+	  "tag_ids": [2,3,4]
+
+
+    },
+    {
+      "id": 344,
+      "title": "AI Beats Human in Complex Strategy Game",
+      "preview": "5810b30eb29b12dd.jpg",
+      "theme": "news master",
+      "desc": "An advanced artificial intelligence system has defeated a top-ranked human player in a complex real-time strategy game.",
+      "date": "7 July 2024",
+      "author_id": 38,
+	  "likes": 65,
+	  "tag_ids": [1,4]
+
+
+    },
+    {
+      "id": 347,
+      "title": "Martian Microbes Discovered by New Rover",
+      "preview": "5e70b0f7d804873c.jpg",
+      "theme": "sensation",
+      "desc": "NASA's latest Mars rover has discovered evidence of microbial life, opening up new possibilities for extraterrestrial life.",
+      "date": "7 July 2024",
+      "author_id": 28,
+	  "likes": 5,
+	  "tag_ids": [1]
+
+
+    },
+    {
+      "id": 345,
+      "title": "Election Upset in Canada",
+      "preview": "8654b5014fb7d260.jpg",
+      "theme": "politics",
+      "desc": "In a surprising upset, the Green Party of Canada has become the country's leading political party after yesterday's general election.",
+      "date": "7 July 2024",
+      "author_id": 12,
+      "big": 1,
+	  "likes": 50,
+	  "tag_ids": [1,2,3,5]
+
+
+    },
+    {
+      "id": 343,
+      "title": "Unprecedented Heat Wave Cripples Europe",
+      "preview": "f12a1eeca12782f3.jpg",
+      "theme": "hot news",
+      "desc": "An unexpected and record-breaking heat wave has swept across Europe, causing widespread disruptions in multiple countries.",
+      "date": "7 July 2024",
+      "author_id": 33,
+      "big": 1,
+	  "likes": 25,
+	  "tag_ids": [2,3,4]
+
+
+    },
+    {
+      "id": 344,
+      "title": "AI Beats Human in Complex Strategy Game",
+      "preview": "5810b30eb29b12dd.jpg",
+      "theme": "news master",
+      "desc": "An advanced artificial intelligence system has defeated a top-ranked human player in a complex real-time strategy game.",
+      "date": "7 July 2024",
+      "author_id": 38,
+	  "likes": 65,
+	  "tag_ids": [1,4]
+
+
+    }
+  ],
+  "fullUrl": "blog",
+  "blogMiniSlogan": "International business & Risks",
+  "siteData": {
+    "email": "admin@newshub.com",
+    "slogan": "\"Newshub.com - Your Pulse on America's Hot Political Sensations!\"",
+    "title": "newshub.com"
+  },
+
+  "themes":
+  [
+	  "politics", 
+	  "america", 
+	  "sensation", 
+	  "hot news", 
+	  "news master"
+  ],
+
+  "authors": [
+    {
+	  "id": 38,
+	  "name": "Jhon L",
+	  "job_title": "teacher",
+	  "img": "img.png"
+	},
+    {
+	  "id": 33,
+	  "name": "Sten L",
+	  "job_title": "teacher",
+	  "img": "img.png"
+	},
+    {
+	  "id": 12,
+	  "name": "Markus L",
+	  "job_title": "teacher",
+	  "img": "img.png"
+	},
+    {
+	  "id": 28,
+	  "name": "Boris L",
+	  "job_title": "teacher",
+	  "img": "img.png"
+	},
+    {
+	  "id": 23,
+	  "name": "Antonio L",
+	  "job_title": "teacher",
+	  "img": "img.png"
+	}
+  ],
+	"tags": [
+		{ 
+			"id": 1,
+			"name": "news"
+		},
+		{
+			"id": 2,
+			"name": "countrys"
+	  	}, 
+		{
+			"id": 3,
+			"name": "people"
+		}, 
+		{
+			"id": 4,
+			"name": "science"
+		}, 
+		{
+			"id": 5,
+			"name": "cataclysm"
+		}, 
+		{ 
+			"id": 6,
+		   	"name": "war"
+		}
+	]
+}

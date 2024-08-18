@@ -1,0 +1,21 @@
+                            <li class="grid-item p-5px" style="height: 420px">
+                                <div class="card bg-transparent h-100 border-1 border-solid border-radius-6px p-15px" style="border-color: #CCDCC5">
+                                    <div class="p-0 card-body pt-5px xs-pb-15px m-0">
+										<a href="#" class="text-dark-gray fw-400 fs-12 border-1 border-solid border-radius-6px p-5px ps-8px pe-8px" style="border-color: #CCDCC5">{{data.theme}}</a>
+										<br/>
+                                        <a href="single-post?post_id={{data.id}}" class="card-title mb-0 text-dark-gray d-inline-block fs-16 fw-500 mt-25px" style="font-family: Inter; line-height: 19.36px;">{{data.title}}</a>
+										<br/>
+                                        <a href="single-post?post_id={{data.id}}" class="card-title mb-0 text-dark-gray d-inline-block fs-12 fw-400" style="font-family: Inter; line-height: 19.36px;">{{data.desc}}</a>
+                                    </div>
+
+                                    <div class="blog-image position-relative overflow-hidden border-radius-4px mt-10px">
+                                        <a href="single-post?post_id={{data.id}}"><img src="{{return_path}}images/blog/{{data.preview}}" alt="" /></a>
+                                    </div>
+									
+									<div class="fs-10">
+										<span>14 minutes ago</span>
+										<span class="ps-10px"><img src="{{return_path}}images/eye.svg" style="width: 16px;"/> 43</span>
+										<span class="ps-10px"><img src="{{return_path}}images/comment.svg" style="width: 16px;"/> 16</span>
+									</div>
+                                </div>
+                            </li>

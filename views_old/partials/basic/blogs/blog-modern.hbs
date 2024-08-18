@@ -1,0 +1,37 @@
+        <section class="pt-5 ps-10 pe-10 xs-px-0">
+            <div class="container-fluid">                
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="blog-modern blog-wrapper grid-loading grid grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
+                            <li class="grid-sizer"></li>
+                            <!-- start blog item -->
+							{{# sixEach  blog.elems}}
+
+							{{# if this.0.title}}
+								{{# if (isEqual this.0.title ../this.blog.elems.0.title)}}
+									{{> card-modern classes="grid-item-double" data=this.[0] }}								
+									<li class="grid-item">
+										{{> @partial-block }}
+									</li>
+								{{else}}
+									{{> card-modern classes="grid-item-double" data=this.[0] }}								
+								{{/ if}}
+							{{/ if}}
+							{{# if this.1.title}}
+								{{# if (isEqual this.0.title ../this.blog.elems.0.title)}}
+									{{> card-modern classes="grid-item-double" data=this.[1] }}
+								{{else}}
+									{{> card-modern classes="" data=this.[1] }}
+								{{/ if}}
+							{{/ if}}
+							{{# if this.2.title}}
+								{{> card-modern classes="" data=this.[2] }}
+							{{/ if}}
+							{{/ sixEach}}
+                        </ul>
+						{{> pagination}}
+                    </div>
+                </div>
+            </div>
+        </section>
+

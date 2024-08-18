@@ -1,0 +1,74 @@
+        <section class="pt-0 ps-2 pe-2 xs-px-0">
+            <div class="container-fluid">                
+                <div class="row blog-metro">
+                    <div class="col-12">
+                        <ul class="blog-metro blog-wrapper grid-loading grid grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-large">
+                            <li class="grid-sizer"></li>
+                            <!-- start blog item -->
+							{{# threeEach  blog.elems}}
+
+							{{# if this.0.title}}
+								<li class="grid-item grid-item-double">
+										<div>
+											<figure class="position-relative mb-0 overflow-hidden">
+												<div class="blog-image bg-dark-slate-blue">
+													<img src="../{{this.0.preview}}" alt="" />
+													<div class="blog-overlay"></div>
+												</div>
+												<figcaption class="d-flex flex-column justify-content-end h-100 ps-7 pe-7 pt-6 pb-6">
+													<div class="blog-categories mb-auto">
+														<a href="blog?theme='{{this.0.theme}}'" class="categories-btn bg-white text-dark-gray text-uppercase alt-font fw-700 ms-0 mb-auto align-self-start">{{this.0.theme}}</a>
+													</div>
+													<a href="single-post?post_id={{this.0.id}}" class="w-100 h-100"></a>
+													<span class="fs-13 alt-font mb-5px text-white opacity-6 text-uppercase">{{this.0.date}}</span>
+													<span class="text-white card-title fs-20 lh-30 fw-500 alt-font">{{this.0.title}}</span>
+												</figcaption>
+											</figure>
+										</div>
+								</li>
+							{{/ if}}
+							{{# if this.1.title}}
+									<li class="grid-item">
+										<figure class="position-relative mb-0 overflow-hidden">
+											<div class="blog-image bg-dark-slate-blue">
+												<img src="../{{this.1.preview}}" alt="" />
+												<div class="blog-overlay"></div>
+											</div>
+											<figcaption class="d-flex flex-column justify-content-end h-100 ps-14 pe-14 pt-12 pb-12 sm-ps-7 sm-pe-7 sm-pt-6 sm-pb-6">
+												<div class="blog-categories mb-auto">
+													<a href="blog?theme={{this.1.theme}}" class="categories-btn bg-white text-dark-gray text-uppercase alt-font fw-700 ms-0 mb-auto align-self-start">{{this.1.theme}}</a>
+												</div>
+												<a href="single-post?post_id={{this.1.id}}" class="w-100 h-100"></a>
+												<a href="single-post?post_id={{this.1.id}}" class="fs-13 alt-font mb-5px text-white opacity-6 text-uppercase">{{this.1.date}}</a>
+												<a href="single-post?post_id={{this.1.id}}" class="text-white card-title fs-20 lh-30 fw-500 w-85 sm-w-100 alt-font">{{this.1.title}}</a>
+											</figcaption>
+										</figure>
+									</li>
+							{{/ if}}
+							{{# if this.2.title}}
+									<li class="grid-item">
+										<figure class="position-relative mb-0 overflow-hidden">
+											<div class="blog-image bg-dark-slate-blue">
+												<img src="../{{this.2.preview}}" alt="" />
+												<div class="blog-overlay"></div>
+											</div>
+											<figcaption class="d-flex flex-column justify-content-end h-100 ps-14 pe-14 pt-12 pb-12 sm-ps-7 sm-pe-7 sm-pt-6 sm-pb-6">
+												<div class="blog-categories mb-auto">
+													<a href="blog?theme={{this.2.theme}}" class="categories-btn bg-white text-dark-gray text-uppercase alt-font fw-700 ms-0 mb-auto align-self-start">{{this.2.theme}}</a>
+												</div>
+												<a href="single-post?post_id={{this.2.id}}" class="w-100 h-100"></a>
+												<a href="single-post?post_id={{this.2.id}}" class="fs-13 alt-font mb-5px text-white opacity-6 text-uppercase">{{this.2.date}}</a>
+												<a href="single-post?post_id={{this.2.id}}" class="text-white card-title fs-20 lh-30 fw-500 w-85 sm-w-100 alt-font">{{this.2.title}}</a>
+											</figcaption>
+										</figure>
+									</li>
+							{{/ if}}
+							{{/ threeEach}}
+
+                        </ul>
+						{{> pagination}}
+                    </div>
+                </div>
+            </div>
+        </section>
+

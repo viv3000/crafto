@@ -1,0 +1,26 @@
+        <!-- start section -->
+        <section class="bg-dark-gray">
+            <div class="container">
+                <div class="row justify-content-center mb-2">
+                    <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-10 text-center">
+                        <h3 class="fw-600 text-white ls-minus-1px md-ls-0px">{{category_name}}</h3>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-12 position-relative swiper-light-pagination">
+                        <div class="swiper" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "autoplay": { "delay": 1600, "disableOnInteraction": false }, "pagination": { "el": ".swiper-pagination-bullets-03", "clickable": true, "dynamicBullets": false }, "navigation": { "nextEl": ".slider-one-slide-next-02", "prevEl": ".slider-one-slide-prev-02" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 3 }, "480": { "slidesPerView": 2 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
+                            <div class="swiper-wrapper align-items-center">
+								{{> @partial-block }}
+                            </div>
+                        </div>
+                        <!-- start slider navigation -->
+                        <div class="slider-one-slide-prev-02 bg-transparent border border-2 border-color-transparent-white-very-light h-50px w-50px swiper-button-prev slider-navigation-style-03"><i class="fa-solid fa-arrow-left text-white"></i></div>
+                        <div class="slider-one-slide-next-02 bg-transparent border border-2 border-color-transparent-white-very-light h-50px w-50px swiper-button-next slider-navigation-style-03"><i class="fa-solid fa-arrow-right text-white"></i></div>
+                        <!-- end slider navigation -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+

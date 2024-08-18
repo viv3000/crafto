@@ -1,0 +1,64 @@
+
+        <!-- start blog section -->
+        <section class="pt-0 ps-10 pe-10 xl-ps-2 xl-pe-2 sm-mx-0">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+						<ul data-anime='{ "el": "childs", "scale": [0,1], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }' class="blog-masonry blog-wrapper grid-loading grid grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
+                            <li class="grid-sizer"></li>
+
+
+
+							{{#each blog.elems}}
+								<li class="grid-item">
+									<a href="single-post?post_id={{this.id}}">
+										<div class="card border-0 border-radius-4px overflow-hidden box-shadow-quadruple-large box-shadow-quadruple-large-hover">
+											<div class="card-top d-flex align-items-center">
+												{{#with this.author_id}}
+													{{#each ../../this.authors}}
+														{{#if (isEqual ../this this.id)}}
+															<a href="blog?author={{this.id}}"><span class="fs-15">By {{this.name}}</span></a>
+														{{/if}}
+													{{/each}}
+												{{/with}}
+												<div class="like-count ms-auto fs-13">
+													{{#with this.id}}
+														{{#each ../../this.elems}}
+															{{#if (isEqual ../this this.id)}} 
+																<a href="single-post?post_id={{this.id}}">
+																	<i class="fa-regular fa-heart text-red d-inline-block"></i>
+																	<span class="text-dark-gray fw-600">{{this.likes}}</span>
+																</a>
+															{{/if}}
+														{{/each}}
+													{{/with}}
+												</div>
+											</div>
+											<div class="blog-image position-relative overflow-hidden">
+												<a href="single-post?post_id={{this.id}}"><img src="../{{this.preview}}" alt="" /></a>
+												<div class="blog-categories">
+													<a href="single-post?post_id={{this.id}}" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase alt-font fw-600">{{this.theme}}</a>
+												</div>
+											</div>
+											<div class="card-body p-0">
+												<div class="post-content ps-13 pe-13 pt-11 pb-11">
+													<a href="single-post?post_id={{this.id}}" class="card-title mb-10px fw-500 fs-17 lh-26 fw-600 text-dark-gray text-dark-gray-hover d-inline-block">{{this.title}}</a>
+													<p class="mb-10px">{{this.desc}}</p>
+													<a href="single-post?post_id={{this.id}}" class="blog-date fs-14 text-medium-gray text-dark-gray-hover"><i class="feather icon-feather-calendar text-dark-gray fs-15"></i>{{this.date}}</a>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							{{/each}}
+
+						</ul>
+
+						{{> pagination}}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end blog section -->
+
+

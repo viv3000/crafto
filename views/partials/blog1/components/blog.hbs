@@ -1,0 +1,29 @@
+        <section id="blog" class="bg-solitude-blue position-relative sm-pb-20px pt-0" style="display: flex; justify-content: center;"> 
+            <div class="container p-0 m-0 w-100 mw-100" >
+                <div class="row">
+                    <div class="col-12 px-0">
+                        <ul class="row p-0" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <li class="grid-sizer"></li>
+							{{# each  blog.elems}}
+								{{> card2 data=this return_path=../this.blog.return_path path=../this.blog.path}}
+							{{/ each}}
+                        </ul>
+                    </div>
+				</div> 
+
+				{{> pagination path="blog" }}
+
+
+            </div>
+        </section>
+<style>
+#blog{
+		padding-right: 90px;
+		padding-left: 90px;
+
+	@media(max-width: 990px) {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+</style>

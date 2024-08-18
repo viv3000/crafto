@@ -1,0 +1,22 @@
+                            <li class="grid-item">
+                                <figure class="position-relative mb-0 box-hover">
+                                    <div class="blog-image">
+										<a href="single-post?post_id={{data.id}}">
+											<img src="../{{data.preview}}" alt="" />
+										</a>
+                                        <span class="box-overlay bg-dark-slate-blue"></span>
+                                        <span class="bg-gradient-gray-light-dark-transparent position-absolute opacity-6 top-0px left-0px w-100 h-100"></span>
+                                    </div>
+                                    <figcaption class="d-flex flex-column h-100">
+                                        <div class="my-auto w-100 text-center blog-hover-icon"><a href="single-post?post_id={{data.id}}" class="d-inline-block"><i class="line-icon-Arrow-OutRight icon-extra-large text-white"></i></a></div>
+                                        <div class="position-relative post-content p-14 text-center last-paragraph-no-margin">
+                                            <div class="position-relative z-index-2 overflow-hidden">
+                                                <a href="blog-grid.html" class="d-inline-block fs-15 text-gradient-light-blue-light-turquoise mb-5px text-uppercase fw-600">{{data.date}}</a>
+                                                <a href="single-post?post_id={{data.id}}" class="card-title fs-20 alt-font fw-500 text-white mb-0 d-block">{{data.title}}</a>
+                                                <div class="hover-text"><a href="single-post?post_id={{data.id}}" class="btn btn-link-gradient btn-medium text-white thin mt-20px mb-5px opacity-6 fw-300">Continue reading<span class="bg-white"></span></a></div>
+                                            </div>
+                                            <div class="box-overlay bg-dark-slate-blue"></div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>

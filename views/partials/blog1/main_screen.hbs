@@ -1,0 +1,77 @@
+        <section id="main_screen"
+			class="page-title-big-typography bg-dark-gray ipad-top-space-margin cover-background" 
+			style="
+				background-image: url({{blog.return_path}}images/main_screen.jpg);
+				transform: rotateY(180deg); 
+				padding-bottom: 0;
+				height: 640px;
+				display: flex;
+				flex-direction: column;
+				justify-content: end;
+				border-radius: 10px;">
+            <div class="container" style="transform: rotateY(180deg); margin-right: 0; margin-bottom: 0;">
+                <div class="row align-items-end small-screen">
+                    <div class="position-relative page-title-extra-small">
+                        <span class="mb-15px text-white opacity-7 fw-300 overflow-hidden">
+                            <span class="tagline d-inline-block" data-anime='{ "translateY": [30, 0], "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "staggervalue": 300 }'>
+								Unlocking the Future with Every Article
+							</span>
+                        </span>
+                        <h2 class="m-auto pb-5px pt-5px text-white fw-600 ls-minus-1px overflow-hidden">
+                            <p class="header-text d-inline-block" data-anime='{ "translateY": [30, 0], "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "staggervalue": 300, "delay": 200 }' 
+							style="">
+								Your Gateway <br/>
+								to Knowledge
+							</p>
+                        </h2>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+<style>
+#main_screen {
+	.header-text{
+		text-transform:uppercase;
+		font-family: Inter;
+		font-size: 64px;
+		font-weight: 600;
+		line-height: 70.4px;
+	}
+
+	@media(max-width: 600px){
+		.header-text{
+			font-size: 50px;
+			line-height: 60px;
+		}
+
+	}
+	@media(max-width: 500px){
+		.header-text{
+			font-size: 30px;
+			line-height: 40px;
+		}
+
+	}
+	.tagline{
+		font-family: Inter;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 24.2px;
+		text-align: center;	
+	}
+
+	@media(max-width: 600px){
+		.tagline{
+			font-size: 16px;
+		}
+
+	}
+	@media(max-width: 500px){
+		.tagline{
+			font-size: 12px;
+		}
+
+	}
+}
+</style>
