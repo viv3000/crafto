@@ -1,0 +1,39 @@
+<div class="adventage pt-50px">
+	<div style="height: 154px; width: 154px;">
+		<img class="w-100 h-100" src="{{return}}{{image}}">
+	</div>
+	<div style="width: 400px">
+		<p class="mt-10px fs-16 fw-600"> {{head}} </p>
+		<span class="fs-12"> {{> @partial-block }} </span>
+	</div>
+</div>
+
+<style>
+#adventages {
+	.adventage{
+		min-width: 610px;
+		line-height: 14px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	padding-left: 360px;
+	padding-right: 360px;
+	font-family: Inter;
+	line-height: 22.4px;
+
+	@media(max-width: 1100px){
+
+	}
+	@media(max-width: 800px){
+		.adventage{
+			flex-direction: column;
+		}
+	}
+	@media(max-width: 550px){
+	}
+
+	@media(max-width: 460px){
+	}
+}
+</style>

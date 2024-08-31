@@ -1,4 +1,4 @@
-{{#>layout}}
+{{#> blog1_layout }}
 	<div class="container" style="margin-top: 100px">
 		<div class="row">
 			<div class="col-12 col-lg-3">
@@ -12,32 +12,30 @@
 					<p class="p-0 mb-10px"><a style="color: #333" href="#">Saved</a></p>
 				</div>
 				<div class="mt-20px">
-					{{> tag text="Biology"}}
-					{{> tag text="AI" }}
-					{{> tag text="Nanotechnology" }}
-					{{> tag text="Physics" }}
-					{{> tag text="Medicine" }}
-					{{> tag text="Ecology" }}
-					{{> tag text="Chemistry" }}
-					{{> tag text="Genetics and Biotechnology" }}
-					{{> tag text="Astronomy" }}
-					{{> tag text="Anthropology" }}
-					{{> tag text="Economy" }}
+					{{> blog1_tag text="Biology"}}
+					{{> blog1_tag text="AI" }}
+					{{> blog1_tag text="Nanotechnology" }}
+					{{> blog1_tag text="Physics" }}
+					{{> blog1_tag text="Medicine" }}
+					{{> blog1_tag text="Ecology" }}
+					{{> blog1_tag text="Chemistry" }}
+					{{> blog1_tag text="Genetics and Biotechnology" }}
+					{{> blog1_tag text="Astronomy" }}
+					{{> blog1_tag text="Anthropology" }}
+					{{> blog1_tag text="Economy" }}
 				</div>
 			</div>
 
 
 			<div class="col-12 col-lg-9">
-				{{> post_header text="Impact of Climate Change on Ecosystem Biodiversity: Current Challenges and Adaptation Strategies" }}
+				{{> blog1_post_header text="Impact of Climate Change on Ecosystem Biodiversity: Current Challenges and Adaptation Strategies" }}
 				<div style="max-width: 770px;">
-					{{> post }}
-					<section>
-						{{> write_comment }}
-					</section>
-					{{> post_comments }}
+					{{> blog1_post }}
+					{{> blog1_write_comment }}
+					{{> blog1_post_comments }}
 				</div>
 
 			</div>
 		</div>
 	</div>
-{{/layout}}
+{{/ blog1_layout }}

@@ -37,21 +37,22 @@ function getRandomHbsFile(folderPath) {
 	}
   }
 
-export default async () => {
+let createPartials = async (namespace) => {
 	//register partials
 	let registerPartial = async (partialsDir) => {
 		const files = await glob.glob(`${partialsDir}/**/*.hbs`, (er, files) => {return files})
 		files.forEach(filePath => {
-			const partialName = path.basename(filePath, '.hbs');
+			const partialName = `${namespace}_${path.basename(filePath, '.hbs')}`;
+			console.log(partialName)
 			const partialContent = fs.readFileSync(filePath, 'utf8');
 			handlebars.registerPartial(partialName, partialContent);
 		});
 	}
-	const partialsDir = path.join(__dirname, 'views', 'partials');
+	const partialsDir = path.join(__dirname, 'views', 'partials', namespace);
 	registerPartial(partialsDir)
+}
 
-	//register helpers
-
+let createHelpers = async () => {
 	handlebars.registerHelper('contains', function (str, substr, options) {
 		if (str && str.includes(substr)) {
 			return options.fn(this);
@@ -64,6 +65,13 @@ export default async () => {
 		var ret = "";
 		for (var i = 0, j = context.length; i < j; i+=3) {
 			ret = ret + options.fn([context[i], context[i+1], context[i+2]]);
+		}
+		return ret;
+	});
+	handlebars.registerHelper('fourEach', function (context, options) {
+		var ret = "";
+		for (var i = 0, j = context.length; i < j; i+=4) {
+			ret = ret + options.fn([context[i], context[i+1], context[i+2], context[i+3]]);
 		}
 		return ret;
 	});
@@ -106,3 +114,5 @@ export default async () => {
 	});
 
 }
+
+export { createHelpers, createPartials }

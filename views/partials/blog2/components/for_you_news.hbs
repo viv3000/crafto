@@ -1,0 +1,36 @@
+<section id="select-for-you" class=" position-relative  p-0 m-0" style="display: flex;justify-content: center;">
+	<div class="container ps-50px sm-ps-10px ms-50px sm-ms-10px pe-50px sm-pe-10px me-50px sm-me-10px">
+		<div class="row" >
+			<div class="row" style="border: 0px solid #CCDCC5; border-width: 0.5px 0.5px 0px 0.5px; " >
+				<div class="col-6">
+					<h2>Select for you</h2>
+				</div>
+				<div class="col-6 p-0 m-0">
+					<div>
+						<a href="single-post?post_id={{data.id}}"><img src="{{blog.return_path}}images/select_for_you.png" alt="" /></a>
+                    </div>
+				</div>
+			</div>
+
+			<div class="row">
+				<ul class="blog-classic blog-wrapper grid grid-4col xl-grid-4col lg-grid-2col md-grid-2col sm-grid-1col xs-grid-1col gutter-double-extra-large" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <li class="grid-sizer"></li>
+					{{# each blog.elems}}
+						{{# if (isEqual @key 0) }}
+							{{> blog2_card3 data=this return_path=../this.blog.return_path}}
+						{{/ if }}
+						{{# if (isEqual @key 1) }}
+							{{> blog2_card3 data=this return_path=../this.blog.return_path}}
+						{{/ if }}
+						{{# if (isEqual @key 2) }}
+							{{> blog2_card3 data=this return_path=../this.blog.return_path}}
+						{{/ if }}
+						{{# if (isEqual @key 3) }}
+							{{> blog2_card3 data=this return_path=../this.blog.return_path}}
+						{{/ if }}
+					{{/ each}}
+                </ul>
+			</div>
+		</div>
+	</div>
+</section>

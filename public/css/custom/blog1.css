@@ -1,0 +1,172 @@
+#about-screen {
+	background-image: url({{blog.return_path}}images/desc_background.png);
+	min-height: 600px;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-left: 360px;
+	padding-right: 360px;
+	font-family: Inter;
+	line-height: 22.4px;
+
+	@media(max-width: 1100px){
+		padding-left: 200px;
+		padding-right: 200px;
+
+	}
+	@media(max-width: 800px){
+		padding-left: 100px;
+		padding-right: 100px;
+		min-height: 400px;
+	}
+	@media(max-width: 550px){
+		padding-left: 50px;
+		padding-right: 50px;
+		min-height: 400px;
+	}
+
+	@media(max-width: 460px){
+		padding-left: 10px;
+		padding-right: 10px;
+		min-height: 500px;
+	}
+	@media(max-width: 380px){
+		min-height: 550px;
+	}
+}
+
+#blog{
+		padding-right: 90px;
+		padding-left: 90px;
+
+	@media(max-width: 990px) {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
+#citate {
+	@media(max-width: 600px){
+		div p{
+			font-size: 20px;
+		}
+
+	}
+	@media(max-width: 500px){
+		div p{
+			font-size: 18px;
+			line-height: 1;
+		}
+
+	}
+}
+
+#index-comments{
+	@media (max-width: 1100px){
+		display: none;
+	}
+}
+#news{
+	padding-right: 90px;
+	padding-left: 90px;
+
+	@media(max-width: 990px) {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
+#pagination {
+	color: black;
+
+	.active .page-link{
+		color: black;
+		background: #CCDCC5;
+		font-size: 16px;
+	}
+
+	.feather{
+		color: #54893D;
+		font-size: 30px;
+	}
+}
+
+.subscribe-banner{
+	.checkbox-container {
+		display: block;
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 12px;
+		cursor: pointer;
+		font-size: 22px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
+	/* Hide the browser's default checkbox */
+	.checkbox-container input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+	
+	/* Create a custom checkbox */
+	.checkmark {
+		position: absolute;
+		top: 9px;
+		left: 0;
+		height: 15px;
+		width: 15px;
+		background-color: white;
+		border: 1px black solid;
+	}
+	
+	/* On mouse-over, add a grey background color */
+	.checkbox-container:hover input ~ .checkmark {
+		background-color: #ccc;
+	}
+	
+	/* When the checkbox is checked, add a blue background */
+	.checkbox-container input:checked ~ .checkmark {
+		background-color: #002B4E;
+	}
+	
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+	
+	/* Show the checkmark when checked */
+	.checkbox-container input:checked ~ .checkmark:after {
+		display: block;
+	}
+	
+	/* Style the checkmark/indicator */
+	.checkbox-container .checkmark:after {
+		left: 6px;
+		top: 3px;
+		width: 5px;
+		height: 8px;
+		border: solid white;
+		border-width: 0 2px 2px 0;
+		-webkit-transform: rotate(35deg);
+		-ms-transform: rotate(35deg);
+		transform: rotate(35deg);
+	}
+}
+
+
+
+#subscribe-banner{
+	margin-left: 100px; margin-right: 100px;
+
+	@media(max-width: 800px){
+		margin-left: 0px; 
+		margin-right: 0px;
+	}
+}

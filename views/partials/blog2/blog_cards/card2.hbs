@@ -1,0 +1,44 @@
+                            <li class="col-12 p-0 m-0">
+								<div class="p-0 m-0" style="">
+									<div class="p-0 w-95" style="display: flex;">
+	
+	   									<div class="blog-image position-relative overflow-hidden">
+		  									<a href="single-post?post_id={{data.id}}"><img src="{{return_path}}images/blog/{{data.preview}}" alt="" /></a>
+			 							</div>
+	
+
+	   									<div class="blog-info border-1 border-solid p-20px" style="font-family: Inter; line-height: 19.36px; border-color: #CCDCC5;">
+											<div class="h-100" style="display: flex; flex-direction: column; justify-content: space-between; ">
+												<div>
+												<a href="{{return_path}}{{path}}single-post?post_id={{data.id}}" class="card-title mb-0 text-dark-gray d-inline-block fs-16 fw-500">{{data.title}}</a>
+												<br/>
+												<a href="{{return_path}}{{path}}single-post?post_id={{data.id}}" class="card-title mb-0 text-dark-gray d-inline-block fs-12 fw-400 mt-15px">{{data.desc}}</a>
+												</div>
+	
+										
+												<div class="blog-info-top fs-10">
+													<span class="ps-10px"><img src="{{return_path}}images/like.svg"/> {{data.likes}}</span>
+													<span class="ps-10px"><img src="{{return_path}}images/comment.svg"/> 16</span>
+													<span class="ps-10px"><img src="{{return_path}}images/save.svg"/> 43</span>
+												</div>
+											</div>
+
+											<div>
+												<div class="ms-5px mt-50px blog-post-right">
+													<div class="fs-12" style="color: #333">
+														<img src="{{blog.return_path}}images/save.svg" />
+													</div>
+													<div class="fs-12" style="color: #333">
+														<img src="{{blog.return_path}}images/share.svg" />
+													</div>
+													<div class="w-100"></div>
+												</div>
+											</div>
+
+	
+	   									</div>
+	
+	   								</div>
+								</div>
+                            </li>
+

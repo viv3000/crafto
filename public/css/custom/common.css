@@ -1,0 +1,117 @@
+span, p, h1{
+	font-family: Inter;
+}
+
+.contacts-main{
+	margin-left: 100px;
+	margin-right: 100px;
+	@media(max-width: 768px){
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	
+}
+
+
+#content{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+@media(max-width: 500px){
+	#content{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+.container-center-horisontal{
+	margin: auto;
+	max-width: 1440px;
+}
+
+h1 {
+	font-size: 64;
+	font-weight: 600;
+	font-family: Inter;
+}
+
+
+footer {
+	.checkbox-container {
+		display: block;
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 12px;
+		cursor: pointer;
+		font-size: 22px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
+	/* Hide the browser's default checkbox */
+	.checkbox-container input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+/* Create a custom checkbox */
+	.checkmark {
+		position: absolute;
+		top: 9px;
+		left: 0;
+		height: 15px;
+		width: 15px;
+		background-color: rgba(0,0,0,0);
+		border: 1px white solid;
+		border-radius: 2px;
+	}
+	
+	/* On mouse-over, add a grey background color */
+	.checkbox-container:hover input ~ .checkmark {
+		background-color: #ccc;
+	}
+	
+	/* When the checkbox is checked, add a blue background */
+	.checkbox-container input:checked ~ .checkmark {
+		background-color: #002B4E;
+	}
+	
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+	
+	/* Show the checkmark when checked */
+	.checkbox-container input:checked ~ .checkmark:after {
+		display: block;
+	}
+	
+	/* Style the checkmark/indicator */
+	.checkbox-container .checkmark:after {
+		left: 6px;
+		top: 3px;
+		width: 5px;
+		height: 8px;
+		border: solid white;
+		border-width: 0 2px 2px 0;
+		-webkit-transform: rotate(35deg);
+		-ms-transform: rotate(35deg);
+		transform: rotate(35deg);
+	}
+}
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+	padding: 0;
+}

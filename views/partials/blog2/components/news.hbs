@@ -1,0 +1,30 @@
+        <section id="news" class="bg-solitude-blue position-relative sm-pb-20px pt-0" style="display: flex;justify-content: center;"> 
+            <div class="container p-0 m-0">
+                <div class="row">
+                    <div class="ms-1px col-12 p-0" style="display: flex; flex-direction: column; justify-content: space-between;">
+						<div class="w-100 h-100 p-10px" style="border: 0px solid #CCDCC5; border-width: 0.5px 0.5px 0.5px 0.5px; " >
+							<span class="text-black fw-600 fs-24">Popular</span>
+						</div>
+					</div>
+                    <div class="col-12 px-0">
+                        <ul class="blog-classic blog-wrapper grid grid-2col xl-grid-2col lg-grid-2col md-grid-2col sm-grid-1col xs-grid-1col gutter-double-extra-large" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <li class="grid-sizer"></li>
+							{{# each  blog.elems}}
+								{{# if (isEqual @key 0) }}
+									{{> blog2_card4 data=this return_path=../this.blog.return_path}}
+								{{/ if }}
+								{{# if (isEqual @key 1) }}
+									{{> blog2_card4 data=this return_path=../this.blog.return_path}}
+								{{/ if }}
+								{{# if (isEqual @key 2) }}
+									{{> blog2_card4 data=this return_path=../this.blog.return_path}}
+								{{/ if }}
+								{{# if (isEqual @key 3) }}
+									{{> blog2_card4 data=this return_path=../this.blog.return_path}}
+								{{/ if }}
+							{{/ each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>

@@ -1,0 +1,71 @@
+<script type="text/javascript">
+let showScroll = () => {
+		let rb = document.getElementById("right-button")
+		let lb = document.getElementById("left-button")
+		let tags = document.getElementById("tags")
+		if (tags.scrollLeft == 0) {
+			rb.style.display = "none"
+		}else {
+			rb.style.display = "block"
+		}
+		if (tags.scrollLeft == tags.scrollLeftMax) {
+			lb.style.display = "none"
+		}
+		else {
+			lb.style.display = "block"
+		}
+		
+
+	}
+
+let scrollTags = async (elementId, scroll) => {
+	for (let i=0; i!=10; i++){
+		document.getElementById(elementId).scrollLeft+=scroll/10
+		await new Promise(resolve => setTimeout(resolve, 10));
+		showScroll()
+	}
+}
+</script>
+
+{{#> blog2_layout }}
+	<section class="text-left text-black mb-0 pb-0 ms-50px md-ms-10px ps-50px md-ps-10px">
+		<h1>News</h1>
+	</section>
+	<section class="text-left text-black fs-24 fw-600 mb-10px pb-0 ms-50px md-ms-10px ps-50px md-ps-10px">
+		<span>Categoryes</span>
+	</section>
+	<section id="tags-section" class="mt-0 pt-0 " style="display: flex;">
+				<a id="right-button" class="fs-50 pb-5px pe-40px" style="cursor: pointer; color: #54893D;; position: absolute;
+				background: linear-gradient(-90deg, rgba(255,255,255, 0.1) 0%, rgba(255,255,255, 0.9) 50%,  #fff 100%);" onclick="scrollTags('tags', -150)"><</a>
+				<div id="tags" style=" overflow: hidden; white-space: nowrap; display: flex;">
+					{{> blog2_tag2 text="Biology"}}
+					{{> blog2_tag2 text="AI" }}
+					{{> blog2_tag2 text="Nanotechnology" }}
+					{{> blog2_tag2 text="Physics" }}
+					{{> blog2_tag2 text="Medicine" }}
+					{{> blog2_tag2 text="Ecology" }}
+					{{> blog2_tag2 text="Chemistry" }}
+					{{> blog2_tag2 text="Genetics and Biotechnology" }}
+					{{> blog2_tag2 text="Astronomy" }}
+					{{> blog2_tag2 text="Anthropology" }}
+					{{> blog2_tag2 text="Economy" }}
+				</div>
+				<a id="left-button" class="fs-50 ps-40px pe-10px" style="cursor: pointer; color: #54893D; position: absolute;
+				background: linear-gradient(90deg, rgba(255,255,255, 0.1) 0%, rgba(255,255,255, 0.9) 50%,  #fff 100%);
+				"
+
+				onclick="scrollTags('tags', 150)">></a>
+
+	</section>
+
+	{{> blog2_news }}
+	{{> blog2_for_you_news }}
+	{{> blog2_latest_news }}
+	{{> blog2_pagination path="news" }}
+{{/blog2_layout}}
+
+<script type="text/javascript">
+
+		showScroll()
+
+</script>

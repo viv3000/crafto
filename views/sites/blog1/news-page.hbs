@@ -27,7 +27,7 @@ let scrollTags = async (elementId, scroll) => {
 }
 </script>
 
-{{#>layout}}
+{{#> blog1_layout }}
 	<section class="text-center text-black">
 		<h1>NEWS</h1>
 	</section>
@@ -35,17 +35,17 @@ let scrollTags = async (elementId, scroll) => {
 				<a id="right-button" class="fs-50 pb-5px pe-40px" style="cursor: pointer; color: #54893D;; position: absolute;
 				background: linear-gradient(-90deg, rgba(255,255,255, 0.1) 0%, rgba(255,255,255, 0.9) 50%,  #fff 100%);" onclick="scrollTags('tags', -150)"><</a>
 				<div id="tags" style=" overflow: hidden; white-space: nowrap; display: flex;">
-					{{> tag2 text="Biology"}}
-					{{> tag2 text="AI" }}
-					{{> tag2 text="Nanotechnology" }}
-					{{> tag2 text="Physics" }}
-					{{> tag2 text="Medicine" }}
-					{{> tag2 text="Ecology" }}
-					{{> tag2 text="Chemistry" }}
-					{{> tag2 text="Genetics and Biotechnology" }}
-					{{> tag2 text="Astronomy" }}
-					{{> tag2 text="Anthropology" }}
-					{{> tag2 text="Economy" }}
+					{{> blog1_tag2 text="Biology"}}
+					{{> blog1_tag2 text="AI" }}
+					{{> blog1_tag2 text="Nanotechnology" }}
+					{{> blog1_tag2 text="Physics" }}
+					{{> blog1_tag2 text="Medicine" }}
+					{{> blog1_tag2 text="Ecology" }}
+					{{> blog1_tag2 text="Chemistry" }}
+					{{> blog1_tag2 text="Genetics and Biotechnology" }}
+					{{> blog1_tag2 text="Astronomy" }}
+					{{> blog1_tag2 text="Anthropology" }}
+					{{> blog1_tag2 text="Economy" }}
 				</div>
 				<a id="left-button" class="fs-50 ps-40px pe-10px" style="cursor: pointer; color: #54893D; position: absolute;
 				background: linear-gradient(90deg, rgba(255,255,255, 0.1) 0%, rgba(255,255,255, 0.9) 50%,  #fff 100%);
@@ -55,8 +55,8 @@ let scrollTags = async (elementId, scroll) => {
 
 	</section>
 
-	{{> news }}
-{{/layout}}
+	{{> blog1_news }}
+{{/blog1_layout}}
 
 <script type="text/javascript">
 

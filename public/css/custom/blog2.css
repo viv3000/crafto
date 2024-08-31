@@ -1,0 +1,359 @@
+#main_screen {
+	.header-text{
+		font-family: Inter;
+		font-size: 64px;
+		font-weight: 600;
+		line-height: 70.4px;
+	}
+
+	@media(max-width: 600px){
+		.header-text{
+			font-size: 50px;
+			line-height: 60px;
+		}
+
+	}
+	@media(max-width: 500px){
+		.header-text{
+			font-size: 30px;
+			line-height: 40px;
+		}
+
+	}
+	.tagline{
+		font-family: Inter;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 24.2px;
+		text-align: center;	
+	}
+
+	@media(max-width: 600px){
+		.tagline{
+			font-size: 16px;
+		}
+
+	}
+	@media(max-width: 500px){
+		.tagline{
+			font-size: 12px;
+		}
+
+	}
+}
+
+.subscribe-banner{
+	.checkbox-container {
+		display: block;
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 12px;
+		cursor: pointer;
+		font-size: 22px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
+	/* Hide the browser's default checkbox */
+	.checkbox-container input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+	width: 0;
+	}
+	
+	/* Create a custom checkbox */
+	.checkmark {
+		position: absolute;
+		top: 9px;
+		left: 0;
+		height: 15px;
+		width: 15px;
+		background-color: white;
+		border: 1px black solid;
+		border-radius: 2px;
+	}
+	
+	/* On mouse-over, add a grey background color */
+	.checkbox-container:hover input ~ .checkmark {
+		background-color: #ccc;
+	}
+	
+	/* When the checkbox is checked, add a blue background */
+	.checkbox-container input:checked ~ .checkmark {
+		background-color: #002B4E;
+	}
+	
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+	
+	/* Show the checkmark when checked */
+	.checkbox-container input:checked ~ .checkmark:after {
+		display: block;
+	}
+	
+	/* Style the checkmark/indicator */
+	.checkbox-container .checkmark:after {
+		left: 6px;
+		top: 3px;
+		width: 5px;
+		height: 8px;
+		border: solid white;
+		border-width: 0 2px 2px 0;
+		-webkit-transform: rotate(35deg);
+		-ms-transform: rotate(35deg);
+		transform: rotate(35deg);
+	}
+}
+
+#subscribe-banner{
+	margin-left: 100px; margin-right: 100px;
+
+	@media(max-width: 800px){
+		margin-left: 0px; 
+		margin-right: 0px;
+	}
+}
+
+#pagination {
+	color: black;
+
+	.active .page-link{
+		color: black;
+		background: #CCDCC5;
+		font-size: 16px;
+	}
+
+	.feather{
+		color: #54893D;
+		font-size: 30px;
+	}
+}
+
+#news{
+	padding-right: 90px;
+	padding-left: 90px;
+
+	@media(max-width: 990px) {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
+#index-comments{
+	.comments{
+		display: flex;
+		flex-direction: row;
+		justify-content: center; 
+
+		border: 0px solid #CCDCC5; 
+		border-width: 1px 1px 1px 0px;
+	}
+
+	.swiper {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+	@media (max-width: 1100px){
+		.swiper {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		.slider-one-slide-prev-06 {
+			left: -30px;	
+		}
+		.slider-one-slide-next-06 {
+			right: -30px;	
+		}
+		.comments{
+			flex-direction: column;
+
+			border: 0px solid #CCDCC5; 
+			border-width: 1px 1px 1px 0px;
+		}
+	}
+}
+
+.comment{
+	font-family: Inter; 
+	text-align: left; 
+	border: 0px solid #CCDCC5; 
+	border-left-width: 1px;
+
+	display: flex; 
+	flex-direction: row; 
+	justify-content: center; 
+
+	@media (max-width: 990px){
+		display: flex; 
+		flex-direction: column; 
+		justify-content: center; 
+	}
+
+	@media (max-width: 1100px){
+		border-width: 1px 0px 0px 1px;
+	}
+}
+
+#citate {
+	width: 100%;
+	.container{
+		width: 650px;
+	}
+
+	@media(max-width: 600px){
+		div p{
+			font-size: 20px;
+		}
+		.container{
+			width: 100%;
+		}
+
+	}
+	@media(max-width: 500px){
+		div p{
+			font-size: 18px;
+			line-height: 1;
+		}
+
+	}
+}
+
+#about-screen {
+	background-image: url({{blog.return_path}}images/desc_background.png);
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-left: 360px;
+	padding-right: 360px;
+	font-family: Inter;
+	line-height: 22.4px;
+
+	@media(max-width: 1100px){
+			padding-left: 200px;
+			padding-right: 200px;
+
+	}
+	@media(max-width: 800px){
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	@media(max-width: 550px){
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	@media(max-width: 460px){
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.cursor-pointer:hover{
+	cursor: pointer;
+}
+#select-for-you{
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	> .container {
+		max-width: 100%;
+		max-width: -moz-available;          /* For Mozzila */
+		max-width: -webkit-fill-available;  /* For Chrome */
+		max-width: stretch; 
+	}
+}
+.blog3-card .border{
+	height: 155px;
+
+}
+.blog4-card {
+	.blog-image {
+		width: 50%;
+	}
+}
+.blog1-card {
+	.blog-image {
+		width: 100%;
+		padding: 0;
+	}
+	.blog-info{
+		height: 100px;
+	}
+}
+
+#blog, #news{
+	padding-right: 100px;
+	padding-left: 100px;
+
+	@media(max-width: 990px) {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.blog-info-top span, .blog-info-top img{
+		width: 16px;
+	}
+	.blog-post-right, .blog-post-right img{
+		width: 16px;
+	}
+	.blog-image{
+		max-width: 50%;
+		padding-left: 0px;
+		padding-bottom: 0px;
+		padding-right: 0px;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.blog-info{
+		min-width: 50%;
+		max-width: 50%;
+		display: flex;
+	}
+
+	@media(max-width: 995px){
+		min-width: 100vw;
+		max-width: 100vw;
+	}
+	.container {
+		max-width: none;
+	}
+}
+
+#tags-section {
+	#tags{
+		margin-top: 5px;
+	}
+	margin-left: 100px; margin-right: 100px;
+	#right-button {
+			left: 100px
+	}
+	#left-button {
+			right: 100px
+	}
+	@media (max-width: 950px) {
+		margin-left: 0px; margin-right: 0px;
+		#right-button {
+				left: 0px
+		}
+		#left-button {
+				right: 0px
+		}
+	}
+	@media (max-width: 765px) {
+		#tags{
+			margin-top: 0px;
+		}
+	}
+}
